@@ -29,7 +29,7 @@ struct State {
 impl State {
     fn new() -> Self {
         State {
-            mode: GameMode::Menu
+            mode: GameMode::Menu,
         }
     }
 
@@ -43,7 +43,7 @@ impl State {
             match key {
                 VirtualKeyCode::P => self.restart(),
                 VirtualKeyCode::Q => ctx.quitting = true,
-                _ => {},
+                _ => {}
             }
         }
     }
